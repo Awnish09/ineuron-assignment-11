@@ -16,8 +16,12 @@ int main()
 int lcm(int x, int y)
 {
     int i, j;
+    if(x<y)
+        i=y;
+    else
+        i=x;
 
-    for(i=2; i<=x*y; i++)
+    for(i; i<=x*y; i++)
     {
         if(i%x==0 && i%y==0)
             break;
